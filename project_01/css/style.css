@@ -1,0 +1,524 @@
+*, *:befor. *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/topology.png);
+    background-attachment: fixed;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+h2, h3 {
+    font-family: pill_gothic_300mgthin, sans-serif;
+}
+h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+p {
+    font-size: 1.2em;
+    font-family: fira_sansbook, sans-serif;
+    line-height: 1.75;
+}
+/*************************************************************/
+/* HEADER                                                  */
+/*************************************************************/
+header {
+    position: fixed;
+    min-height: 4em;
+    width: 100%;
+    z-index: 10;
+}
+.upside-manu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: 10px 1%;
+}
+/*****Випадаюче меню*************************************************/
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.dropdown img{
+    width: 2rem;
+}
+.dropbtn {
+    cursor: pointer;  
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translate3d(-20px, -30px, 0px);
+    background-image: url(../img/topography.svg);
+    min-width: 20%;
+    height: 100vh;
+    overflow: auto;
+}
+.dropdown-content a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    transition: all ease .3s;
+}
+.show {
+    display: block;
+}
+/*  **************************************************/
+.dropdown a[href="#"] {
+    background-color: #253736;
+}
+.dropdown a[href="#"]:hover {
+    background-color: rgba(37,55,54,.9);
+}
+.dropdown a[href="#about"] {
+    background-color: rgb(0,15,14);
+}
+.dropdown a[href="#about"]:hover {
+    background-color: rgba(0,15,14,.9);
+}
+.dropdown a[href="#article_2"] {
+    background: rgb(8,45,47);
+}
+.dropdown a[href="#article_2"]:hover {
+    background: rgba(8,45,47,.9);
+}
+.dropdown a[href="#article_3"] {
+    background: rgb(77,85,71);
+}
+.dropdown a[href="#article_3"]:hover {
+    background: rgba(77,85,71,.9);
+}
+.dropdown a[href="#article_4"] {
+    background: rgb(103,97,58);
+}
+.dropdown a[href="#article_4"]:hover {
+    background: rgba(103,97,58,.9);
+}
+.dropdown a[href="#article_5"] {
+    background: rgb(2,23,48);
+}
+.dropdown a[href="#article_5"]:hover {
+    background: rgba(2,23,48,.9);
+}
+.dropdown a[href="#contact"] {
+    background-color: #37576C;
+}
+.dropdown a[href="#contact"]:hover {
+    background-color: rgba(55,87,108,.9);
+}
+/*************************************************************/
+/* MAIN                                                   */
+/*************************************************************/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow:hidden;
+    background-color: rgba(0,15,14,.95);
+}
+/* conteiner-img *******************************/
+.conteiner-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+}
+.conteiner-img img{
+    width: 100%;
+    height: 100vh;
+}
+/* Центральний напис **************************************************/
+.wordmark-visible{
+    position: absolute;
+}
+.path {
+    stroke-dashoffset: 0px;
+    stroke-width: 5px;
+    stroke-dasharray: 249.314px;
+    transition-delay: 4s;
+    fill: none;
+stroke: white;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-miterlimit: 10;
+transition-property: stroke-width, stroke-dashoffset;
+transition-duration: 0.35s, 0.35s;
+transition-delay: 0s, 0s;
+transition-timing-function: ease-out;
+box-sizing: inherit;
+font: inherit;
+color: rgb(255, 255, 255);
+text-transform: uppercase;
+}
+
+
+/* animation **************************************************/
+
+#svgContainer {
+    width: 1000px;
+    position: absolute;
+    margin: auto;
+    color: #fff;
+}
+
+
+
+
+/* conteiner-all_section **************************************************/
+.conteiner-all_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.conteiner-all {
+    width: 85%;    
+}
+.text_all_section-chenger {
+    display: flex;
+    flex-direction: column;    
+    max-width: 38%;
+    max-height: 80vh;
+    flex-wrap: wrap;
+}
+.conteiner-all_section-chenger {
+    display: flex;
+    justify-content: space-between;   
+    width: 100%;
+}
+.conteiner-all_section-chenger img {
+    width: 220px;
+    height: 330px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.25s ease-in-out 0s;    
+}
+.conteiner-all_section-chenger img:hover{    
+    transform: scale(1.1);    
+}
+.transition {
+    transition: .2s;
+}
+/* second_section **************************************************/
+.second_section {
+    width: 100%;
+    margin-top: 0;
+}
+.second_section:hover {
+background: rgba(8,45,47,.2);
+}
+/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
+.second_section:hover ~ * {
+background: rgba(8,45,47,.2);
+}
+.second_section:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(8,45,47,.2);
+  pointer-events: none;
+  z-index: -1;
+}
+/* therd_section **************************************************/
+.therd_section {
+    width: 100%;
+    margin-top: 0;
+}
+.therd_section:hover {
+background: rgba(77,85,71, .2);
+}
+/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
+.therd_section:hover ~ * {
+background: rgba(77,85,71, .2);
+}
+.therd_section:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(77,85,71, .2);
+  pointer-events: none;
+  z-index: -1;
+}
+/* forth_section **************************************************/
+.forth_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0;
+}
+.forth_section:hover {
+background: rgba(103,97,58, .2);
+}
+/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
+.forth_section:hover ~ * {
+background: rgba(103,97,58, .2);
+}
+.forth_section:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(103,97,58, .2);
+  pointer-events: none;
+  z-index: -1;
+}
+/*  **************************************************/
+.forth_section-pillar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1.32;
+    margin-left: 100px;
+}
+.forth_section-pillar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.forth_section-pillar ul, li {
+    list-style-type: none;
+}
+.forth_section-pillar img {
+    width: 220px;
+    height: 320px;
+    transition: .3s ease-in-out 0s;
+}
+.text_all_section-chenger-forth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 2.04;
+}
+.text_all_section-chenger-forth h2, .text_all_section-chenger-forth p{
+    width: 60%;
+    padding-left: 200px;
+}
+/* ефект лінування **************************************************/
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */    
+   }
+   .scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */       
+   }
+/* fifth_section **************************************************/
+.fifth_section {
+    width: 100%;
+    margin-top: 0;
+}
+/*************************************************************/
+/* FOOTER                                                    */
+/*************************************************************/
+.basement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,15,14,.95);
+    text-align: center;
+}
+.basement img{
+    width: 100%;   
+}
+.basement-text {
+    margin-top: -35%;
+    width: 40%;
+}
+.basement-text p {
+    width: 55%;
+    margin: 0 auto;
+}
+.basement-boxform {
+    text-align: left;
+    width: 25%;
+    line-height: 2;
+    margin-left: -20px;
+}
+.basement-boxform input {
+    width: 100%;
+    height: 2em;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+.basement-boxform button {
+    line-height: 3;
+    margin: 20px 38%;
+    width: 30%;
+    background-color: #33556C;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+.basement-boxform button:hover{
+    box-shadow: 3px 3px 5px #fff;
+    cursor: pointer;
+}
+/*========== social ===========*/
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.basement-social {
+    display: flex;    
+    justify-content: flex-end;
+    width: 100%;
+    text-align: right;
+    margin: 190px 125px 0 0;
+    max-height: 80px;
+    font-size: 2em;
+}
+ul.submenu {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0;
+  overflow: hidden;
+}
+ul.submenu li {
+  display: inline-block;
+}
+ul.submenu li a i.fa {
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid transparent;
+  color: #ccc;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+}
+ul.submenu li a i.fa::after {
+  content: "";
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: -500%;
+  bottom: -500%;
+  left: -500%;
+  right: -500%;
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 200px;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+ul.submenu li a:hover i.fa::before {
+  color: #fff;
+}
+ul.submenu li a:hover i.fa-facebook::after {
+  height: 200%;
+  width: 200%;
+  background-color: #3b5998;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-twitter::after {
+  height: 200%;
+  width: 200%;
+  background-color: #1dcaff;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-pinterest::after {
+  height: 200%;
+  width: 200%;
+  background-color: #E60023;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-instagram::after {
+  height: 200%;
+  width: 200%;
+  background-color: #8a3ab9;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-youtube::after {
+  height: 200%;
+  width: 200%;
+  background-color: #e62117;
+  border-radius: 0px;
+  opacity: 1;
+}
+/*************************************************************/
+/* END FOOTER                                                    */
+/*************************************************************/
+@media screen and (max-width: 1200px) {
+    .conteiner-all_section-chenger {
+       flex-wrap: wrap; 
+    }
+    .conteiner-all_section-chenger img, .forth_section-pillar img {
+        width: 150px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 968px) {
+    .conteiner-all_section-chenger {
+       flex-wrap: wrap; 
+    }
+    .conteiner-all_section-chenger img, .forth_section-pillar img {
+        width: 110px;
+        height: 156px;
+    }
+    .text_all_section-chenger-forth h2, .text_all_section-chenger-forth p{
+        padding-left: 100px;
+    }
+}
+@media screen and (max-width: 420px) {
+   .conteiner-all_section-chenger img, .forth_section-pillar img {
+        flex-wrap: wrap;
+        width: 55px;
+        height: 78px;
+    }
+}
