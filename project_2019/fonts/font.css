@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: 'pill_gothic_300mgthin';
+    src: url('pillgothic300mg-thin-webfont.woff2') format('woff2'),
+         url('pillgothic300mg-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('firasansbook-webfont.woff2') format('woff2'),
+         url('firasansbook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
